@@ -1,3 +1,14 @@
+/*
+  File        : style.css
+  Description : CCFアプリのスタイル設定。ボタン・グリッド・配色など。
+  Author      : Shumpei Omori
+  Created     : 2025-07-04
+  License     : MIT
+  Copyright   : © 2025 omorishumpei
+  History     :
+    - 2025-07-04 初版作成
+*/
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
