@@ -1,3 +1,14 @@
+/*
+  File        : script.js
+  Description : 処置ログを記録するロジック、ボタン操作処理など。
+  Author      : Shumpei Omori
+  Created     : 2025-07-04
+  License     : MIT
+  Copyright   : © 2025 omorishumpei
+  History     :
+    - 2025-07-04 初版作成
+*/
+
 // 改良版 script.js（胸骨圧迫ボタン：通常時青・圧迫中暗青）
 let cprTime = 0;
 let ccTime = 0;
