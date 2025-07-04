@@ -1,81 +1,135 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
 }
 
 h1, h2 {
-    color: #333;
+  color: #333;
 }
 
 .timer-display {
-    margin: 20px 0;
-    font-size: 24px;
+  margin: 20px 0;
+  font-size: 24px;
 }
 
 #time_cpr, #time_cc, #rate {
-    margin: 10px 0;
-    font-weight: bold;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
 .button-group {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 button {
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #4CAF50;
-    transition: background-color 0.3s;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
+}
+
+#button-cc.btn-start {
+  background-color: #1976D2; /* 青 */
 }
 
 #log_interruption {
-    margin-top: 20px;
-    text-align: left;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  text-align: left;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .log-entry {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-　/* ↓この位置に追加 */
 .custom-log {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .custom-log input {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .custom-log button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #4CAF50;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.button-grid button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  transition: background-color 0.3s;
+}
+
+.button-grid button:hover {
+  background-color: #45a049;
+}
+
+.chart-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#ccfChart {
+  min-width: 800px;
+}
+
+@media (max-width: 600px) {
+  .timer-display {
+    font-size: 18px;
+  }
+
+  .custom-log input {
+    width: 90%;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
